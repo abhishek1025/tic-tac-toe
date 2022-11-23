@@ -1,0 +1,55 @@
+body {
+  background-color: #e7e7e7;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+main {
+  margin: 0px auto;
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main button {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+  border: none;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div :nth-child(2) {
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+}
+
+main .middle-section button {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+.marked-by-player, .marked-by-bot {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.marked-by-player {
+  color: #FF4411;
+}
+
+.marked-by-bot {
+  color: #1689FC;
+}
+/*# sourceMappingURL=style.css.map */
