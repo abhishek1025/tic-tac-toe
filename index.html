@@ -11,36 +11,107 @@
 
     <link rel="stylesheet" href="CSS/style.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Ubuntu&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Tic-Tac-Toe</h1>
+    <header id="game-title">
+        <h1>TIC <span> - </span> TAC <span> - </span> TOE</h1>
+        <div class="game-mode-btns">
+            <button id="multiplayer">Multiplayer</button>
+            <button id="bot-mode">Bot(Easy Mode)</button>
+        </div>
     </header>
 
-    <main>
+    <div class="name-collection-form">
+        <fieldset>
+
+            <legend>Player 1</legend>
+
+            <section>
+                <label for="player1-name"> Name: </label>
+                <input type="text" id="player1-name" value="Player 1">
+            </section>
+
+            <section>
+                <label for="player1-name"> Choose: </label>
+                <select id="player1-selection">
+                    <option value="0" selected>O</option>
+                    <option value="1">X</option>
+                </select>
+            </section>
+
+        </fieldset>
+
+        <fieldset id="player2-input-fields" style="margin-top: 25px;">
+
+            <legend>Player 2</legend>
+
+            <section>
+                <label for="player2-name"> Name: </label>
+                <input type="text" id="player2-name" value="Player 2">
+            </section>
+
+            <section>
+                <label> Choose: </label>
+                <select id="player2-selection">
+                    <option value="0">O</option>
+                    <option value="1" selected>X</option>
+                </select>
+            </section>
+
+        </fieldset>
 
         <div>
-            <button class="unmarked" data-index="0"></button>
-            <button class="unmarked" data-index="1"></button>
-            <button class="unmarked" data-index="2"></button>
+            <button id="start">Start</button>
+        </div>
+    </div>
+
+
+    <main id="gameboard-UI">
+
+        <div class="top-sec">
+            <button class="unmarked row1"></button>
+            <button class="unmarked row1"></button>
+            <button class="unmarked row1"></button>
         </div>
 
-        <div class="middle-section">
-            <button class="unmarked" data-index="3"></button>
-            <button class="unmarked" data-index="4"></button>
-            <button class="unmarked" data-index="5"></button>
+        <div class="mid-sec">
+            <button class="unmarked row2"></button>
+            <button class="unmarked row2"></button>
+            <button class="unmarked row2"></button>
 
         </div>
 
-        <div>
-            <button class="unmarked" data-index="6"></button>
-            <button class="unmarked" data-index="7"></button>
-            <button class="unmarked" data-index="8"></button>
+        <div class="last-sec">
+            <button class="unmarked row3"></button>
+            <button class="unmarked row3"></button>
+            <button class="unmarked row3"></button>
+
         </div>
 
     </main>
+
+    <div class="player-1">
+
+
+    </div>
+
+    <div class="player-2">
+
+    </div>
+
+    <footer>
+        <span>
+            Copyright © 2022
+            <a href="https://github.com/abhishek1025/Etch-a-sketch-game" target="_blank">ABHISHEK</a>
+        </span>
+    </footer>
 
     <script src="JS/app.js"></script>
 </body>

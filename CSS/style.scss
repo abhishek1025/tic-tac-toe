@@ -1,24 +1,63 @@
 body {
     background-color: rgb(231, 231, 231);
+    // background-color: white;
 }
 
 header {
+
+    transition: 0.4s all;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -90%);
+
     h1 {
         text-align: center;
         font-size: 70px;
+        font-family: 'Poor Story', cursive;
+        letter-spacing: 1.5px;
+        font-weight: bolder;
+
+        span {
+            color: #C3073F;
+        }
     }
+
+    div {
+        text-align: center;
+
+        button {
+            width: 200px;
+            height: 50px;
+            font-size: 22px;
+            border: 2px solid #C3073F;
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: 30px;
+            background-color: white;
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: #C3073F;
+                color: white;
+            }
+        }
+
+        :first-child {
+            margin-right: 40px;
+        }
+    }
+
+
 }
 
-// button{
-//     width: 100px;
-//     height: 50px;
-// }
 
 main {
     margin: 0px auto;
     width: 300px;
     height: 300px;
-    margin-top: 100px;
+    margin-top: 250px;
     box-sizing: border-box;
 
     button {
@@ -27,6 +66,7 @@ main {
         height: 100px;
         width: 100px;
         border: none;
+        background-color: white;
     }
 
     div {
@@ -38,7 +78,7 @@ main {
         }
     }
 
-    .middle-section {
+    .mid-sec {
         button {
             border-top: 4px solid black;
             border-bottom: 4px solid black;
@@ -46,15 +86,124 @@ main {
     }
 }
 
-.marked-by-player, .marked-by-bot{
+.color-red,
+.color-blue {
     font-size: 40px;
     font-weight: bolder;
 }
 
-.marked-by-player {
+.color-red {
     color: #FF4411;
 }
 
-.marked-by-bot {
+.color-blue {
     color: #1689FC;
+}
+
+.name-collection-form {
+    font-family: 'Ubuntu', sans-serif;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    background-color: white;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    fieldset {
+        width: 400px;
+        padding: 15px;
+        border: 2px solid #C3073F;
+
+        legend {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        :nth-child(3) {
+            margin-top: 15px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        input {
+            width: 200px;
+            padding: 7px 10px;
+            border: 1px solid black;
+        }
+
+        select {
+            width: 40px;
+            border: 1px solid black;
+            font-size: 17px;
+            height: 30px;
+        }
+    }
+
+    div {
+        text-align: center;
+
+        button {
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+            border: 2px solid #C3073F;
+            margin-top: 30px;
+            background-color: white;
+            cursor: pointer;
+
+            letter-spacing: 1.5px;
+
+            &:hover {
+                background-color: rgb(244, 243, 243);
+            }
+        }
+    }
+}
+
+.player-1 {
+    left: 10%;
+
+}
+
+.player-2 {
+    left: 75%;
+}
+
+
+.player-1,
+.player-2 {
+    position: absolute;
+    top: 30%;
+    font-family: 'Ubuntu', sans-serif;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    section {
+        font-size: 40px;
+        text-align: center;
+        color: #C3073F;
+    }
+}
+
+footer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 1000%);
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+
+    a{
+        color: #C3073F;
+    }
 }
